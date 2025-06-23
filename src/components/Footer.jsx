@@ -41,7 +41,8 @@ const Footer = () => {
               <div className="footer-logo-bg">
                 <Code2 size={24} className="footer-logo-icon" />
               </div>
-              <div className="footer-logo-text">
+              <div className="footer-logo-text" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <img src="/logo.png" alt="GRPS Logo" style={{ height: 32, width: 32, objectFit: 'contain' }} />
                 <span className="footer-logo-main">GR</span>
                 <span className="gradient-text">Ps </span>
               </div>
