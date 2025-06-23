@@ -31,7 +31,12 @@ const Header = () => {
             <div className="header-logo-bg">
               <Code2 size={24} className="header-logo-icon" />
             </div>
-            <div className="header-logo-text">
+            <div className="header-logo-text" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <img
+                src="/grps-logo.png"
+                alt="GRPS Logo"
+                style={{ height: 36, width: 36, objectFit: 'contain', borderRadius: '8px', background: '#fff' }}
+              />
               <span className="header-logo-main">GR</span>
               <span className="gradient-text">P</span>
             </div>
