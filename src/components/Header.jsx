@@ -29,7 +29,7 @@ const Header = () => {
         <div className="header-row">
           <div className="header-logo-row">
             <div className="header-logo-bg">
-              <Code2 size={24} className="header-logo-icon" />
+              <img src="/logo1.png" alt="Logo" className="header-logo-img" />
             </div>
             <div className="header-logo-text">
               <span className="header-logo-main">GR</span>
