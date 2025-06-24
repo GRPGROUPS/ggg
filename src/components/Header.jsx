@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import './Header.css';
-import logo from '../assets/logo1.png';
+import logo from '/logo1.png'; // Adjust the path as necessary
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,31 +29,24 @@ const Header = () => {
     <header className={`header-root ${isScrolled ? 'header-scrolled' : ''}`}>
       <nav className="header-container">
         <div className="header-row">
+          {/* ✅ Logo Row with Image */}
           <div className="header-logo-row">
-            <div className="header-logo-bg">
-              <img src={logo} alt="Logo" className="header-logo-img" />
-            </div>
+            <img src={logo} alt="GRP Logo" className="header-logo-img" />
             <div className="header-logo-text">
-              <span className="header-logo-main">G  </span>
-              <span className="gradient-text"> R P </span>
+              <span className="header-logo-main">GR</span>
+              <span className="gradient-text">P</span>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <div className="header-nav-desktop">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="header-link group"
-              >
+              <a key={item.name} href={item.href} className="header-link group">
                 {item.name}
                 <span className="header-link-underline"></span>
               </a>
             ))}
-            <button className="header-btn-primary">
-              Get Started
-            </button>
+            <button className="header-btn-primary">Get Started</button>
           </div>
 
           {/* Mobile menu button */}
