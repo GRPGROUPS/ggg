@@ -28,7 +28,6 @@
   gap: 12px;
 }
 .header-logo-bg {
-  background: linear-gradient(to right, #a78bfa, #7c3aed);
   padding: 8px;
   border-radius: 12px;
 }
@@ -153,7 +152,6 @@
 .header-btn-mobile {
   width: 100%;
 }
-
 .header-logo-img {
   width: 40px;
   height: 40px;
