@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 import './Header.css';
-import'./logo1.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +32,8 @@ const Header = () => {
               <img src="/logo1.png" alt="Logo" className="header-logo-img" />
             </div>
             <div className="header-logo-text">
-              <span className="header-logo-main">GR</span>
-              <span className="gradient-text">P</span>
+              <span className="header-logo-main">G  </span>
+              <span className="gradient-text"> R P </span>
             </div>
           </div>
 
