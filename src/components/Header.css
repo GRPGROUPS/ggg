@@ -43,7 +43,9 @@
 }
 .gradient-text {
   background: linear-gradient(to right, #a78bfa, #f472b6);
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 .header-nav-desktop {
