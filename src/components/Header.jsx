@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 import './Header.css';
+import logo from '../assets/logo1.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
         <div className="header-row">
           <div className="header-logo-row">
             <div className="header-logo-bg">
-              <img src="/logo1.png" alt="Logo" className="header-logo-img" />
+              <img src={logo} alt="Logo" className="header-logo-img" />
             </div>
             <div className="header-logo-text">
               <span className="header-logo-main">G  </span>
